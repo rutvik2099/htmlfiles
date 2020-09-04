@@ -1,0 +1,25 @@
+
+
+<html>
+<script>
+const grades = [80, 77, 88, 95, 68];
+
+function getAvg(grades) {
+  const total = grades.reduce((acc, c) => acc + c, 0);
+  return total / grades.length;
+}
+
+const average = getAvg(grades);
+console.log(average);
+</script>
+<body>
+
+<tr>Marks
+<td>80</td>
+<td>77</td>
+<td>88</td>
+<td>95</td>
+<td>68</td></tr>
+<button type='btn' onclick="getAvg(grades)">
+    Calculate Average
+  </button>
